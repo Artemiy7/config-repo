@@ -1,0 +1,13 @@
+server:
+  port: 8888
+  timeZone: UTC
+
+spring:
+#  profiles:
+#    active: prod
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Artemiy7/ticket.git
+#        native: file:///home/a1/IdeaProjects/config-server/src/main/resources/config
