@@ -3,8 +3,8 @@ server:
   timeZone: UTC
 
 spring:
-#  profiles:
-#    active: prod
+  profiles:
+    active: default
   cloud:
     config:
       server:
