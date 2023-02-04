@@ -9,5 +9,5 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/Artemiy7/ticket.git
+          uri: https://github.com/Artemiy7/config-server.git
 #        native: file:///home/a1/IdeaProjects/config-server/src/main/resources/config
