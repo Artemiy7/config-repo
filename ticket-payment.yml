@@ -65,4 +65,4 @@ service:
           business: 2.0
           economic: 1.0
           date: 0.1
-          seat: 0.111111111111111111
+          seat: 0.1
