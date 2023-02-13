@@ -33,15 +33,15 @@ service:
   default-currency: usd
   bank:
     account:
-      uri: http://localhost:8082/bank/account/%s
+      url: http://localhost:8082/bank/account/%s
     payment:
-      uri: http://localhost:8082/bank/payment
+      url: http://localhost:8082/bank/payment
   currency-exchange:
     exchangeCurrency:
-      url: //currency-exchange/exchange/%s/%s/%s
+      urn: //currency-exchange/exchange/%s/%s/%s
   pdf-generator:
     generateTicketPdf:
-      url: //pdf-generator/generateTicketPdf
+      urn: //pdf-generator/generateTicketPdf
   occasions:
     occasionLoaderDtoList:
       - concertStadionInitialLoader
