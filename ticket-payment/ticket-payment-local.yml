@@ -37,10 +37,10 @@ service:
     payment:
       url: http://localhost:8082/bank/payment
   currency-exchange:
-    exchangeCurrency:
+    exchange-currency:
       urn: //currency-exchange/exchange/%s/%s/%s
   pdf-generator:
-    generateTicketPdf:
+    generate-ticket-pdf:
       urn: //pdf-generator/generateTicketPdf
   occasions:
     occasionLoaderDtoList:
