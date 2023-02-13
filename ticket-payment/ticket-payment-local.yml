@@ -32,10 +32,9 @@ eureka:
 service:
   default-currency: usd
   bank:
-    account:
-      url: http://localhost:8082/bank/account/%s
-    payment:
-      url: http://localhost:8082/bank/payment
+    url:
+      accountUrl: http://localhost:8082/bank/account/%s
+      paymentUrl: http://localhost:8082/bank/payment
   currency-exchange:
     exchange-currency:
       urn: //currency-exchange/exchange/%s/%s/%s
