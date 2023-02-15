@@ -41,6 +41,9 @@ service:
   pdf-generator:
     generate-ticket-pdf:
       urn: //pdf-generator/generateTicketPdf
+  jobs:
+    execution-time:
+      occasionLoaderJobExecutionTime: "*/7 * * * * *"
   occasions:
     occasionLoaderDtoList:
       - concertStadionInitialLoader
