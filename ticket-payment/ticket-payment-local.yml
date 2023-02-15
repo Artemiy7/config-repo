@@ -30,6 +30,9 @@ eureka:
       defaultZone: http://localhost:8761/eureka
 
 service:
+  jobs:
+    execution-time:
+      occasionLoaderJobExecutionTime: "*/7 * * * * *"
   default-currency: usd
   bank:
     url:
@@ -41,9 +44,6 @@ service:
   pdf-generator:
     generate-ticket-pdf:
       urn: //pdf-generator/generateTicketPdf
-  jobs:
-    execution-time:
-      occasionLoaderJobExecutionTime: "*/7 * * * * *"
   occasions:
     occasionLoaderDtoList:
       - concertStadionInitialLoader
