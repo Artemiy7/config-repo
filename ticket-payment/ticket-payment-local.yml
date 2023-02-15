@@ -48,6 +48,7 @@ service:
     occasionLoaderDtoList:
       - concertStadionInitialLoader
       - concertClubInitialLoader
+      - intercityTrainInitialLoader
     occasion-coefficient:
       concert:
         club:
