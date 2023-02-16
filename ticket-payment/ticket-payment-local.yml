@@ -54,6 +54,10 @@ service:
       - concertStadionInitialLoader
       - concertClubInitialLoader
       - intercityTrainInitialLoader
+    occasionLoaderFileList:
+      - CONCERT_CLUB_FILE
+      - CONCERT_CLUB_STADION_FILE
+      - TRAIN_INTERCITY_FILE
     occasion-coefficient:
       concert:
         club:
