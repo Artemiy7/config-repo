@@ -31,8 +31,13 @@ eureka:
 
 service:
   jobs:
-    execution-time:
-      occasionLoaderJobExecutionTime: "*/7 * * * * *"
+    occasionLoader:
+      occasionLoaderSaveInitialDataJob:
+        execution-time: "*/7 * * * * *"
+      occasionOutdatedDataSetNotActiveJob:
+        execution-time: "*/7 * * * * *"
+      occasionOutdatedDataDeleteJob:
+        execution-time: "*/7 * * * * *"
   default-currency: usd
   bank:
     url:
