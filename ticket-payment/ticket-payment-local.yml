@@ -29,14 +29,17 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka
 
+
 service:
   jobs:
     occasionLoader:
-      occasionLoaderSaveInitialDataJob:
+      occasionLoaderSaveDataFromFileJob:
         execution-time: "*/7 * * * * *"
-      occasionOutdatedDataSetNotActiveJob:
+      occasionSetNotActiveOutdatedDataJob:
         execution-time: "*/7 * * * * *"
-      occasionOutdatedDataDeleteJob:
+      occasionDeleteOutdatedDataFromDBJob:
+        execution-time: "*/7 * * * * *"
+      occasionDeleteOutdatedFromFile:
         execution-time: "*/7 * * * * *"
   default-currency: usd
   bank:
@@ -54,6 +57,10 @@ service:
       - concertStadionInitialLoader
       - concertClubInitialLoader
       - intercityTrainInitialLoader
+    occasionLoaderFileList:
+      - CONCERT_CLUB_FILE
+      - CONCERT_CLUB_STADION_FILE
+      - TRAIN_INTERCITY_FILE
     occasion-coefficient:
       concert:
         club:
@@ -74,3 +81,4 @@ service:
           economic: 1.0
           date: 0.1
           seat: 0.1
+
