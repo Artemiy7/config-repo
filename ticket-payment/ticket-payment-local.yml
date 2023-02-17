@@ -32,6 +32,7 @@ eureka:
     metadataMap:
       instanceId: ${spring.cloud.client.hostname}:${spring.application.name}:${spring.application.instance_id:${server.port}}
 
+
 service:
   jobs:
     occasionLoader:
@@ -83,3 +84,4 @@ service:
           economic: 1.0
           date: 0.1
           seat: 0.1
+
