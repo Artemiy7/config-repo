@@ -54,7 +54,7 @@ service:
       urn: //currency-exchange/exchange/%s/%s/%s
   pdf-generator:
     generate-ticket-pdf:
-      urn: //pdf-generator/generateTicketPdf
+      urn: //pdf-generator/pdf-generator
   occasions:
     occasionLoaderDtoList:
       - concertStadionInitialLoader
